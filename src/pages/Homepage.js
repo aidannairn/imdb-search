@@ -38,12 +38,10 @@ const Homepage = () => {
     })
   }, [])
   
-  
-  console.log(resultsList)
   return (
     <div>
       <Search />
-      <ResultsList />
+      <ResultsList results={resultsList} />
     </div>
   )
 }

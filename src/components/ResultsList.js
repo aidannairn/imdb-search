@@ -1,6 +1,10 @@
-const ResultsList = () => {
+import ResultItem from "./ResultItem"
+
+const ResultsList = ({ results }) => {
   return (
-    <div>ResultsList</div>
+    results.map((result, i) => (
+      <ResultItem key={i} result={result} />
+    ))
   )
 }
 
