@@ -1,8 +1,12 @@
+import Navbar from "./components/Navbar"
+import Homepage from "./pages/Homepage"
+
 const App = () => {
   return (
-    <div>
-      IMDB Search
-    </div>
+    <>
+      <Navbar />
+      <Homepage />
+    </>
   )
 }
 
