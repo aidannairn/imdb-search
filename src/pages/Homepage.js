@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 
 import Search from "../components/Search"
-import MoviesList from "../components/MoviesList"
+import ResultsList from "../components/ResultsList"
 
 const Homepage = () => {
   const [searchStr, setSearchStr] = useState('Shrek')
@@ -43,7 +43,7 @@ const Homepage = () => {
   return (
     <div>
       <Search />
-      <MoviesList />
+      <ResultsList />
     </div>
   )
 }
