@@ -1,0 +1,12 @@
+#results-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3rem 10%;
+}
+
+@media only screen and (max-width: 768px) {
+  #results-list {
+    flex-direction: column;
+  }
+}

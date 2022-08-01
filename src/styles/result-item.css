@@ -1,0 +1,40 @@
+.result-item {
+  width: 30%;
+  margin-bottom: 3rem;
+}
+
+.poster-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 15rem;
+  background-color: rgb(235, 235, 235);
+  overflow: hidden;
+}
+
+.poster-wrapper img {
+  transition: transform 3s;
+}
+
+.poster-wrapper img:hover {
+  transform: scale(2.5);
+}
+
+.result-description {
+  background-color: rgb(200, 200, 200);
+  padding: 0.5rem;
+}
+
+.result-description h3 {
+  margin: 0;
+}
+
+.result-description p {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 768px) {
+  .result-item {
+    width: 100%;
+  }
+}
