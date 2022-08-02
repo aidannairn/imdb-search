@@ -24,6 +24,7 @@
 #nav-options {
   display: flex;
   margin-right: 5%;
+  align-items: center;
 }
 
 #nav-search-bar {
@@ -63,4 +64,22 @@
   color: white;
   cursor: pointer;
   margin-left: 0.5rem;
+}
+
+#nav-options a:hover, #login-btn:hover {
+  color: #e84242;
+  border-color: #e84242;
+}
+
+#login-btn {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+#login-btn p {
+  margin: 0;
 }

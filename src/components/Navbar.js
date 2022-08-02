@@ -28,6 +28,7 @@ const Navbar = ({ setSearchStr }) => {
         </form>
         <a href="#">Home</a>
         <a href="#">About</a>
+        <div id="login-btn"><p>Login</p></div>
       </div>
     </div>
   )
