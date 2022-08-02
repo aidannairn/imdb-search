@@ -16,7 +16,7 @@ const Search = ({ setSearchStr }) => {
 
   return (
     <div id="search-container">
-      <h1>Curious About A Movie?</h1>
+      <h1>Looking For A Movie?</h1>
       <h1>Search Below.</h1>
       <form id="search-bar" onSubmit={handleSubmit}>
         <input type="text" onChange={handleInputChange} />

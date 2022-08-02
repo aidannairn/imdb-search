@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   height: 15rem;
-  background-color: rgb(235, 235, 235);
+  background-color: #380703;
   overflow: hidden;
 }
 
@@ -20,7 +20,8 @@
 }
 
 .result-description {
-  background-color: rgb(200, 200, 200);
+  background-color: #50361A;
+  color: white;
   padding: 0.5rem;
 }
 

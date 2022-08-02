@@ -7,6 +7,8 @@
   align-items: center;
   background-color: white;
   z-index: 1;
+  background-color: #5E0F03;
+  color: white;
 }
 
 #company {
@@ -43,6 +45,7 @@
 }
 
 #nav-search-bar button {
+  background-color: #FF5655;
   border-radius: 0 0.2rem 0.2rem 0;
   border: 1px solid black;
   border-left: 0;
@@ -51,13 +54,13 @@
 }
 
 #nav-search-bar button:hover {
-  background-color: rgb(230, 230, 230);
+  background-color: #e84242;
 }
 
 #nav-options a {
   text-decoration: none;
   padding: 0.5rem;
-  color: black;
+  color: white;
   cursor: pointer;
   margin-left: 0.5rem;
 }

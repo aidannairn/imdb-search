@@ -5,11 +5,12 @@
 }
 
 #search-container h1 {
-  color: white;
+  color: #FF5655;
   margin: 1rem 5%;
 }
 
 #search-container h1:first-of-type {
+  color: white;
   margin-top: 3rem;
 }
 
@@ -36,6 +37,7 @@
 }
 
 #search-bar button {
+  background-color: #FF5655;
   border-radius: 0;
   border: 1px solid black;
   border-left: 0;
@@ -45,5 +47,5 @@
 }
 
 #search-bar button:hover {
-  background-color: rgb(230, 230, 230);
+  background-color: #e84242;
 }
