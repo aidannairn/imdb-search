@@ -21,11 +21,11 @@ const Navbar = ({ setSearchStr }) => {
         <p>IMDB Search</p>
       </div>
       <div id="nav-options">
-        <form id="nav-search-bar" onSubmit={handleSubmit}>
+        {/* <form id="nav-search-bar" onSubmit={handleSubmit}>
           <label>Search:</label>
           <input type="text" onChange={handleInputChange} />
           <button type='submit'><i className="fa fa-search" aria-hidden="true"></i></button>
-        </form>
+        </form> */}
         <a href="#">Home</a>
         <a href="#">About</a>
         <div id="login-btn"><p>Login</p></div>
