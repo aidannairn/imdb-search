@@ -1,0 +1,49 @@
+#search-container {
+  padding-top: 5rem;
+  background: url('https://cdn.filestackcontent.com/7M47Z5JxTrSD0dfr2snx') repeat 0 0;
+  width: 100%;
+}
+
+#search-container h1 {
+  color: white;
+  margin: 1rem 5%;
+}
+
+#search-container h1:first-of-type {
+  margin-top: 3rem;
+}
+
+#search-bar {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto 0;
+  padding-bottom: 3rem;
+  width: 50%;
+  height: 3rem;
+}
+
+#search-bar input[type=text] {
+  border-radius: 0;
+  border: 1px solid black;
+  padding: 0.2rem 0.5rem;
+  width: 70%;
+  font-size: 2em;
+}
+
+#search-bar input[type=text]:focus {
+  outline-width: 0;
+}
+
+#search-bar button {
+  border-radius: 0;
+  border: 1px solid black;
+  border-left: 0;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  width: 18%;
+}
+
+#search-bar button:hover {
+  background-color: rgb(230, 230, 230);
+}

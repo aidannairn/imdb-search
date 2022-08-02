@@ -42,7 +42,7 @@ const Homepage = () => {
   return (
     <div>
       <Navbar setSearchStr={setSearchStr} />
-      <Search />
+      <Search setSearchStr={setSearchStr} />
       <ResultsList results={resultsList} />
     </div>
   )
