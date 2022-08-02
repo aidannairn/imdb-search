@@ -58,7 +58,7 @@
   background-color: #e84242;
 }
 
-#nav-options a {
+#nav-options a, #nav-options > p {
   text-decoration: none;
   padding: 0.5rem;
   color: white;
@@ -66,7 +66,7 @@
   margin-left: 0.5rem;
 }
 
-#nav-options a:hover, #login-btn:hover {
+#nav-options a:hover, #nav-options p:hover,#login-btn:hover {
   color: #e84242;
   border-color: #e84242;
 }
