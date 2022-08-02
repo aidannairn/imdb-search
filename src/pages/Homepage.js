@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 
+import Navbar from "../components/Navbar"
 import Search from "../components/Search"
 import ResultsList from "../components/ResultsList"
 
@@ -36,10 +37,11 @@ const Homepage = () => {
     .catch(err => {
       console.error(err)
     })
-  }, [])
+  }, [searchStr])
   
   return (
     <div>
+      <Navbar setSearchStr={setSearchStr} />
       <Search />
       <ResultsList results={resultsList} />
     </div>

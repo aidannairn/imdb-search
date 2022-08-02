@@ -1,6 +1,19 @@
+import { useState } from 'react'
+
 import '../styles/navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ setSearchStr }) => {
+  const [searchInput, setSearchInput] = useState('')
+
+  const handleInputChange = e => {
+    setSearchInput(e.target.value)
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    setSearchStr(searchInput)
+  }
+
   return (
     <div id="navbar">
       <div id="company">
@@ -8,9 +21,9 @@ const Navbar = () => {
         <p>IMDB Search</p>
       </div>
       <div id="nav-options">
-        <form id="nav-search-bar">
+        <form id="nav-search-bar" onSubmit={handleSubmit}>
           <label>Search:</label>
-          <input type="text" />
+          <input type="text" onChange={handleInputChange} />
           <button type='submit'><i className="fa fa-search" aria-hidden="true"></i></button>
         </form>
         <a href="#">Home</a>
