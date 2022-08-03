@@ -49,3 +49,26 @@
 #search-bar button:hover {
   background-color: #e84242;
 }
+
+@media only screen and (max-width: 768px) {
+  #search-container h1:first-of-type {
+    margin-top: 1rem;
+  }
+  
+  #search-bar {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  #search-bar input[type="text"] {
+    width: calc(99% - 1rem);
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  #search-bar button[type="submit"] {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
