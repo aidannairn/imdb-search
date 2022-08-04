@@ -36,6 +36,23 @@
   margin-right: 0.25rem;
 }
 
+#nav-search-bar {
+  opacity: 0;
+  position: relative;
+  animation: fadeInFromTop .5s forwards;
+}
+
+@keyframes fadeInFromTop{
+  from{
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #nav-search-bar input[type=text] {
   border-radius: 0.2rem 0 0 0.2rem;
   border: 1px solid black;
@@ -59,23 +76,40 @@
   background-color: #e84242;
 }
 
-#nav-options a, #nav-options > p {
+.nav-option {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   padding: 0.5rem;
   color: white;
-  cursor: pointer;
   margin-left: 0.5rem;
 }
 
-#nav-options a:hover, #nav-options p:hover,#login-btn:hover {
+.nav-option p {
+  cursor: pointer;
+  margin: 0;
+}
+
+.nav-option a {
+  text-decoration: none;
+  color: white
+}
+
+.nav-option a:hover {
+  color: #e84242
+}
+
+.nav-option:hover {
   color: #e84242;
+}
+
+#login-btn:hover {
   border-color: #e84242;
 }
 
 #login-btn {
   display: flex;
   align-items: center;
-  margin-left: 0.5rem;
   padding: 0.5rem 1.5rem;
   border: 1px solid white;
   cursor: pointer;
@@ -173,11 +207,65 @@
     width: 100%;
     right: 0;
     justify-content: center;
-    background-color: #5E0F03;
-    padding-bottom: 1rem;
   }
 
-  #nav-options > p, #nav-options > a, #login-btn {
+  .nav-option {
     margin: 0;
+  }
+
+  .nav-option {
+    display: none;
+    opacity: 0;
+    animation: fromLeft .5s forwards;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    background-color: #5E0F03;
+  }
+
+  #login-btn {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-option.open {
+    display: block;
+  }
+
+  .nav-option:focus-within {
+    background-color: #741203;
+  }
+
+  .nav-option:nth-child(2){
+    animation-delay: .2s
+  }
+  
+  .nav-option:nth-child(3){
+    animation-delay: .4s
+  }
+  
+  .nav-option:nth-child(4){
+    animation-delay: .6s
+  }
+  
+  @keyframes fromLeft{
+    from{
+      opacity: 0;
+      transform: translate(60px);
+    }
+    to{
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  #nav-search-bar {
+    opacity: 1;
+    position: relative;
+    animation: none;
   }
 }
