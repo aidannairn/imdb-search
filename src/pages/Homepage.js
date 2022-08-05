@@ -8,7 +8,7 @@ import Search from "../components/Search"
 import ResultsList from "../components/ResultsList"
 
 const Homepage = () => {
-  const [isModalVisible, setIsModalVisible] = useState(true)
+  const [isModalVisible, setIsModalVisible] = useState(false)
   const [searchStr, setSearchStr] = useState('Shrek')
   const [resultsList, setResultsList] = useState([])
 
@@ -45,11 +45,11 @@ const Homepage = () => {
   return (
     <div>
       {isModalVisible && 
-        <Modal>
+        <Modal setIsModalVisible={setIsModalVisible} >
           <Login />
         </Modal>
       }
-      <Navbar setSearchStr={setSearchStr} />
+      <Navbar setSearchStr={setSearchStr} setIsModalVisible={setIsModalVisible} />
       <Search setSearchStr={setSearchStr} />
       <ResultsList results={resultsList} />
     </div>
