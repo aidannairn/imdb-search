@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 
+import Modal from "../components/Modal"
+import Login from "../components/Login"
 import Navbar from "../components/Navbar"
 import Search from "../components/Search"
 import ResultsList from "../components/ResultsList"
 
 const Homepage = () => {
+  const [isModalVisible, setIsModalVisible] = useState(true)
   const [searchStr, setSearchStr] = useState('Shrek')
   const [resultsList, setResultsList] = useState([])
 
@@ -41,6 +44,11 @@ const Homepage = () => {
   
   return (
     <div>
+      {isModalVisible && 
+        <Modal>
+          <Login />
+        </Modal>
+      }
       <Navbar setSearchStr={setSearchStr} />
       <Search setSearchStr={setSearchStr} />
       <ResultsList results={resultsList} />
