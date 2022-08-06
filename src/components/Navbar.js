@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import '../styles/navbar.css'
 
-const Navbar = ({ setSearchStr }) => {
+const Navbar = ({ setSearchStr, setIsModalVisible }) => {
   const [searchInput, setSearchInput] = useState('')
   const [areNavLinksVisible, setAreNavLinksVisible] = useState(false)
   const [isSearchBarVisible, setIsSearchBarVisible] = useState(false)
@@ -46,6 +46,10 @@ const Navbar = ({ setSearchStr }) => {
     setAreNavLinksVisible(!areNavLinksVisible)
   }
 
+  const handleLoginBtnClick = e => {
+    setIsModalVisible(true)
+  }
+
   return (
     <div id="navbar">
       <div id="company">
@@ -69,7 +73,7 @@ const Navbar = ({ setSearchStr }) => {
           <div className={`nav-option ${areNavLinksVisible ? 'open' : ''}`}>
             <a href="#">About</a>
           </div>
-          <div className={`nav-option ${areNavLinksVisible ? 'open' : ''}`}>
+          <div onClick={handleLoginBtnClick} className={`nav-option ${areNavLinksVisible ? 'open' : ''}`}>
             <div id="login-btn"><p>Login</p></div>
           </div>
         </div>

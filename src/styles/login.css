@@ -1,0 +1,53 @@
+#login {
+  background-color: #380703;
+  border: 2px solid #FF5655;
+  height: 32%;
+  width: 25%;
+  padding: 3rem;
+  color: white;
+  border-radius: 0 5rem;
+}
+
+#login form {
+  display: flex;
+  flex-direction: column;
+}
+
+#login h2 {
+  margin: 0 0 1rem 0;
+  color: #FF5655
+}
+
+#login input {
+  margin: 0.5rem 0 1rem;
+  padding: 0.25rem;
+  outline-color: #FF5655;
+}
+
+#login button {
+  display: block;
+  width: 50%;
+  margin: 0.5rem 0 0 auto;
+  padding: 0.5rem 0;
+  background-color: #FF5655;
+  border: none;
+  cursor: pointer;
+}
+
+#login button:hover {
+  background-color: #e84242;
+}
+
+#login p {
+  text-align: right;
+}
+
+#login a {
+  color: #FF5655;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#login a:hover {
+  color: #e84242
+}
