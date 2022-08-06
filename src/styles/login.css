@@ -1,8 +1,8 @@
 #login {
   background-color: #380703;
   border: 2px solid #FF5655;
-  height: 30%;
-  width: 30%;
+  height: 32%;
+  width: 25%;
   padding: 3rem;
   color: white;
   border-radius: 0 5rem;
@@ -31,6 +31,7 @@
   padding: 0.5rem 0;
   background-color: #FF5655;
   border: none;
+  cursor: pointer;
 }
 
 #login button:hover {
